@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "string"
+    },
+    "call_id": {
+      "type": "string"
+    },
+    "guest_name": {
+      "type": "string"
+    },
+    "guest_email": {
+      "type": "string"
+    },
+    "guest_phone": {
+      "type": "string"
+    },
+    "check_in_date": {
+      "type": "string"
+    },
+    "check_out_date": {
+      "type": "string"
+    },
+    "room_type": {
+      "type": "string"
+    },
+    "guest_count": {
+      "type": "number"
+    },
+    "special_requests": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "lead",
+        "confirmed",
+        "cancelled",
+        "no_show"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "ai_call",
+        "direct",
+        "ota",
+        "walk_in"
+      ]
+    },
+    "booking_link_sent": {
+      "type": "boolean"
+    },
+    "confirmation_sent": {
+      "type": "boolean"
+    },
+    "estimated_value": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Reservation"
+}
