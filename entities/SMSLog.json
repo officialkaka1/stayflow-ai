@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "string"
+    },
+    "call_id": {
+      "type": "string"
+    },
+    "reservation_id": {
+      "type": "string"
+    },
+    "recipient_phone": {
+      "type": "string"
+    },
+    "message_type": {
+      "type": "string",
+      "enum": [
+        "booking_link",
+        "confirmation",
+        "follow_up",
+        "review_request",
+        "custom"
+      ]
+    },
+    "message_body": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "sent",
+        "delivered",
+        "failed",
+        "pending"
+      ]
+    },
+    "twilio_message_sid": {
+      "type": "string"
+    },
+    "sent_at": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "SMSLog"
+}
