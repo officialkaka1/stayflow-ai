@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "subdomain": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "trial",
+        "suspended",
+        "onboarding"
+      ]
+    },
+    "plan": {
+      "type": "string",
+      "enum": [
+        "starter",
+        "pro",
+        "multi_property"
+      ]
+    },
+    "twilio_number": {
+      "type": "string"
+    },
+    "ai_voice": {
+      "type": "string",
+      "enum": [
+        "alloy",
+        "echo",
+        "fable",
+        "onyx",
+        "nova",
+        "shimmer"
+      ]
+    },
+    "ai_tone": {
+      "type": "string",
+      "enum": [
+        "professional",
+        "warm",
+        "casual",
+        "luxury"
+      ]
+    },
+    "greeting_message": {
+      "type": "string"
+    },
+    "business_hours_start": {
+      "type": "string"
+    },
+    "business_hours_end": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "escalation_phone": {
+      "type": "string"
+    },
+    "escalation_email": {
+      "type": "string"
+    },
+    "stripe_customer_id": {
+      "type": "string"
+    },
+    "stripe_subscription_id": {
+      "type": "string"
+    },
+    "monthly_minutes_used": {
+      "type": "number"
+    },
+    "monthly_minutes_limit": {
+      "type": "number"
+    },
+    "total_calls": {
+      "type": "number"
+    },
+    "total_bookings_captured": {
+      "type": "number"
+    },
+    "onboarding_completed": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "Hotel"
+}
