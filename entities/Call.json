@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "string"
+    },
+    "caller_number": {
+      "type": "string"
+    },
+    "caller_name": {
+      "type": "string"
+    },
+    "twilio_call_sid": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_progress",
+        "completed",
+        "missed",
+        "transferred",
+        "voicemail"
+      ]
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "intent": {
+      "type": "string",
+      "enum": [
+        "booking_inquiry",
+        "faq",
+        "complaint",
+        "cancellation",
+        "check_in",
+        "amenities",
+        "directions",
+        "other"
+      ]
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "positive",
+        "neutral",
+        "negative"
+      ]
+    },
+    "transcript": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "booking_captured": {
+      "type": "boolean"
+    },
+    "sms_sent": {
+      "type": "boolean"
+    },
+    "escalated": {
+      "type": "boolean"
+    },
+    "recording_url": {
+      "type": "string"
+    },
+    "language_detected": {
+      "type": "string"
+    },
+    "ai_confidence_score": {
+      "type": "number"
+    },
+    "call_date": {
+      "type": "string"
+    },
+    "missed_opportunity": {
+      "type": "boolean"
+    },
+    "follow_up_sent": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "Call"
+}
