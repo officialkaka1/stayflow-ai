@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "owner",
+        "admin",
+        "staff",
+        "viewer"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "invited",
+        "deactivated"
+      ]
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "notifications_email": {
+      "type": "boolean"
+    },
+    "notifications_sms": {
+      "type": "boolean"
+    },
+    "notifications_slack": {
+      "type": "boolean"
+    },
+    "last_login": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "StaffMember"
+}
