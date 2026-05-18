@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "hotel_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "faq",
+        "policy",
+        "menu",
+        "room_description",
+        "amenities",
+        "directions",
+        "pricing",
+        "custom"
+      ]
+    },
+    "content": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "processing"
+      ]
+    },
+    "chunk_count": {
+      "type": "number"
+    },
+    "last_used_at": {
+      "type": "string"
+    },
+    "usage_count": {
+      "type": "number"
+    },
+    "confidence_avg": {
+      "type": "number"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [],
+  "name": "KnowledgeBase"
+}
